@@ -1,3 +1,5 @@
+Installing pip 1.4
+setuptools 0.7.3
 asgiref==3.2.10
 Django==3.1
 django-cors-headers==3.11.0

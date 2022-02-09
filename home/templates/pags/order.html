@@ -1,0 +1,66 @@
+<p>The select element defines a drop-down list:</p>
+
+<form action="." mothed="POST">
+    <br>
+
+  <label for="cars">Choose a car:</label>
+  <br>
+
+  <select id="cars" name="cars">
+    {% for i in Cust %}
+    
+       
+      <option value="volvo">{{i}}</option>
+  
+    
+  
+    {% endfor %}
+  
+  </select>
+  <br>
+
+  <label for="cars">Choose a car:</label>
+  <br>
+
+  <select id="cars" name="cars">
+    {% for j in Por %}
+       
+      <option value="volvo">{{j}}</option>
+  
+    {% endfor %}
+  
+  </select>
+
+  <br>
+
+  <label for="cars">Choose a car:</label>
+  <br>
+
+  <select id="cars" name="cars">
+    <option value="pending">pending</option>
+    <option value="out for deliver">out for deliver</option>
+    <option value="delivered">delivered</option>
+  </select>
+  <br>
+
+
+  <input type="submit">
+</form>
+
+
+
+
+  <label for="cars">Choose a car: {{single_por.name}}</label>
+  <br>
+  
+  <label for="cars">Choose a car: {{single_por.tags}}</label>
+
+
+<!-- for get values from django relations many to  many flowing this command  -->
+
+{% for k in single_por.tags.all %}
+<h1>{{k}}</h1>
+
+
+{% endfor %}
+
